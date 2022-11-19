@@ -1,0 +1,63 @@
+{
+  "name": "forge-react",
+  "productName": "forge-react",
+  "version": "1.0.0",
+  "description": "Electron Forge React Skeleton",
+  "main": "src/index.js",
+  "homepage": "./",
+  "scripts": {
+    "start": "electron-forge start",
+    "start_dev": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "makewin": "electron-forge make -- --platform win32",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\"",
+    "react-start": "react-app-rewired start",
+    "react-build": "BUILD_PATH='./src/dist' react-app-rewired build",
+    "react-test": "react-app-rewired test"
+  },
+  "keywords": [],
+  "author": {
+    "name": "BENARD Patrick",
+    "email": "pbenard73@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.3",
+    "@electron-forge/maker-deb": "^6.0.3",
+    "@electron-forge/maker-rpm": "^6.0.3",
+    "@electron-forge/maker-squirrel": "^6.0.3",
+    "@electron-forge/maker-zip": "^6.0.3",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4",
+    "electron": "21.3.0",
+    "react-app-rewired": "^2.2.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
